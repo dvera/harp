@@ -18,12 +18,14 @@ Allele-specific control of replication timing and genome organization during dev
 This software was written by Daniel Vera (vera@genomics.fsu.edu)
 
 ## software requirements
-This software has only been tested on centos7 and ubuntu trusty, but is expected to work on most modern linux-based systems with the following software installed:
+This software has only been tested on centos7 and ubuntu trusty, but is expected to work on most modern linux-based systems with the following software installed and in your $PATH:
 - bowtie2
 - samtools >1.3
 - gawk
 - GNU coreutils
 - R >3
+
+And the following R packages should be installed:
 - devtools >1.13 (R package)
 
 ## input requirements
@@ -32,13 +34,15 @@ This software has only been tested on centos7 and ubuntu trusty, but is expected
 
 ## installation
 ```bash
+# in R:
 devtools::install_github("dvera/harp")
 ```
 
 ## usage
 
-Make bowtie2 indices for each haplotype, assuming you have a fasta file for each haplotype, where each differs only by SNPs:
 ```bash
+# make bowtie2 indices for each haplotype, assuming you have a fasta file for each haplotype, where each differs only by SNPs:
+
 mkdir bowtie2index && cd bowtie2index
 bowtie2-build /path/to/genome1.fa genome1
 bowtie2-build /path/to/genome2.fa genome2
