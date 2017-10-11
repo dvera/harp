@@ -66,3 +66,10 @@ ref2 <- "/path/to/bowtie2index/genome2"
 harp( f, index1prefix=ref1, index2prefix=ref2 )
 
 ```
+
+## output
+The script will generate a series of files for each input fastq file:
+- *_unmapped.sam (did not map well to either genome)
+- *_parsed_genome1.sam (parsed to genome1)
+- *_parsed_genome2.sam (parsed to genome2)
+- *_ambiguous.sam (mapped well to at least one genome, but could not be confidently parsed)
