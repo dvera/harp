@@ -48,6 +48,8 @@ harp <- function( fastqFiles1 , fastqFiles2=NULL , index1prefix, index2prefix , 
       stop("length of fastqFiles1 and fastqFiles2 must be equal")
     }
     fname2 <- basename(removeext(fastqFiles2))
+  } else{
+    paired=FALSE
   }
 
   # check to see if alignments are provided instead of fastq files
