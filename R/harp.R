@@ -10,7 +10,7 @@
 #' @param fields A vector of optional sam fields to preserve in the output sam files.
 #' @return A vector of file names of the parsed sam files.
 #' @export
-
+#' @import travis
 
 
 
