@@ -11,7 +11,7 @@ Imports: travis,
     gyro,
     converge,
     conifur
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
 Remotes: dvera/travis,
     dvera/conifur,
     dvera/gyro,

@@ -9,7 +9,7 @@
 #' @param threads A positive integer specifying the number of threads to use for alignment and parsing.
 #' @param fields A vector of optional sam fields to preserve in the output sam files.
 #' @return A vector of file names of the parsed sam files.
-
+#' @export
 
 
 
